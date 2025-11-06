@@ -24,3 +24,7 @@ git config --global user.email "1932474243@qq.com"
 ## 1. Fork 他人的仓库
 
 Fork 的本义为“叉子”，即从原仓库复制一个当前状态的到我的仓库当中，我可以对该 Repo 中的文件进行修改，但不影响原仓库，除非我提交 Pull Request。
+
+## 2. 提交 Pull Request
+
+在 Fork 来的 Repo 界面点击 Pull Request，并说明修改原因，以便原作者进行了解，提交之后，Pull request 请求就会发送至原仓库的作者。而如果原作者合并了我的修改，我将成为该 Repo 的 Contributors 之一。
