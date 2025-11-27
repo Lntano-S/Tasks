@@ -15,5 +15,40 @@ body {
 
 /* 导航栏样式 */
 .navbar{
-    background: rgba(41, 202, 97, 0.95);
+    /* 半透明绿色背景 */
+    background: rgba(19, 188, 39, 0.768); 
+    /* 上下内边距1rem，左右为0 */
+    padding: 1rem 0;
+}
+
+/* 导航栏内容容器 */
+.nav-content{
+    /* 最大宽度1200像素，在大屏幕上不会过宽 */
+    max-width: 1200px;
+    /* 水平居中 */
+    margin: 0 auto;
+    /* 使用Flex布局，子元素水平排列 */
+    display: flex;
+    /* 垂直居中对齐 */
+    align-items: center;
+    /* 设置子元素之间的间隙为1rem */
+    gap: 1rem;
+}
+
+/* 导航栏中的图像 */
+.avatar_1 {
+    /* 宽度40像素 */
+    width: 40px;
+    /* 高度40像素 */
+    height: 40px;
+    /* 设置为圆形 */
+    border-radius: 50%;
+    /* 添加2像素宽的实线边框，颜色与主题色一致 */
+    border: 2px solid #113f0bb0;
+}
+
+/* 导航栏标题 */
+.navbar h1 {
+    /* 字体大小1.5rem */
+    font-size: 1.5rem;
 }
