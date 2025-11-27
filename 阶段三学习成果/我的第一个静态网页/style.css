@@ -1,0 +1,19 @@
+/* 基础重置与字体(AI的建议：如果不重置这些默认样式，你的网页在不同浏览器中可能会显示不一致) */
+* {
+    margin: 0;           /* 清除所有元素的外边距 */
+    padding: 0;          /* 清除所有元素的内边距 */
+    box-sizing: border-box;  /* 统一盒模型计算方式 */
+}
+
+body {
+    font-family: 'Microsoft YaHei', Arial, sans-serif;  /* 设置统一字体 */
+    line-height: 1.6;    /* 设置行高，让文字更易读 */
+    color: #333;         /* 设置默认文字颜色 */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);  /* 设置页面背景色 */
+    min-height: 100vh;   /* 确保页面至少占满整个视口高度 */    
+}
+
+/* 导航栏样式 */
+.navbar{
+    background: rgba(41, 202, 97, 0.95);
+}
