@@ -68,7 +68,7 @@ body {
     background: white;
     /* 圆角边框，20像素让角落更圆润 */
     border-radius: 20px;
-    /* 内边距2rem，让内容有充足空间 */
+    /* 内边距2rem，内容有充足空间 */
     padding: 2rem;
 }
 
