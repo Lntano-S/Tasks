@@ -1,0 +1,85 @@
+/* 基础重置与字体(AI的建议：如果不重置这些默认样式，网页在不同浏览器中可能会显示不一致) */
+* {
+    margin: 0;           /* 清除所有元素的外边距 */
+    padding: 0;          /* 清除所有元素的内边距 */
+    box-sizing: border-box;  /* 统一盒模型计算方式 */
+}
+
+body {
+    font-family: 'Microsoft YaHei', Arial, sans-serif;  /* 设置统一字体 */
+    line-height: 1.6;    /* 设置行高，让文字更易读 */
+    color: #150707;         /* 设置默认文字颜色 */
+}
+
+/* 可选：吸顶与平滑滚动 */
+.navbar {                     /* 顶部导航条 */
+    position: sticky;         /* 吸附在视口顶部 */
+    top: 10px;                /* 距离顶部10px*/
+    z-index: 1000;            /* 置于较高层级，避免被内容遮挡 */             
+    width: 100%;              /* 宽度占满整个屏幕 */
+    background: rgba(248, 114, 52, 0.851);
+    padding: 0;               /* 去掉内边距 */  
+    border-radius: 20px;                     
+}
+
+/* 导航：标题 + 横向菜单 */
+.nav-content {                
+    display: flex;            /* 水平排列 */
+    justify-content: space-between; /* 两端对齐：标题在左，菜单在右 */
+    align-items: center;      /* 垂直居中对齐 */
+}
+
+.nav-links {                  /* 导航链接列表（ul） */
+    display: flex;            /* 让列表项横向排列 */
+    flex: 1;                   /* 占满剩余空间 */
+    list-style: none;         /* 去掉默认圆点 */
+    margin: 0;                /* 去掉外边距 */
+    padding: 0;               /* 去掉内边距 */
+    width: auto;
+    
+}
+
+/* 让每个列表项平分宽度 */
+.nav-links li {
+    flex: 1;                  /* 每个 li 占据相同的宽度 */
+    text-align: center;       /* 文字居中 */
+}
+
+/* 每个导航链接的样式 */
+.nav-links a {                
+    color: #ffffff;         /* 链接文字颜色 */
+    display: block;        /* 让链接占满整个列表项 */
+    font-size: 90px;        /* 字体大小 */
+    font-weight: bold;      /* 字体加粗 */
+    text-decoration: none;    /* 去掉下划线 */
+    padding: 3rem 0;  /* 链接的点击区域内边距 */
+    border-radius: 50px;       /* 小圆角 */
+}
+/* 鼠标悬停时的效果 */
+.nav-links a:hover {          
+    background: rgba(255, 184, 109, 0.912); /* 悬停背景色（半透明橙色） */
+    color: #eaeaea;           /* 悬停文字颜色（深绿） */
+}
+
+/* === 主内容区域 === */
+.container {
+
+}
+
+.background-image {
+    width: 100vw;        /* 宽度占满 100% 视口宽度 */
+    height: 100vh;       /* 高度占满 100% 视口高度 */
+    object-fit: cover;   /* 关键属性：保持图片比例并裁剪，填满整个区域，不会变形 */
+    display: block;      /* 去除图片底部的默认空隙 */
+}
+
+.Logo-image {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    transition: transform 1.5s ease;
+    cursor: pointer;
+}
+
